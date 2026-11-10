@@ -11,5 +11,5 @@ def softmax(scores: list[float]) -> list[float]:
     """
     # Your implementation here
     x = torch.as_tensor(scores,dtype=torch.float32)
-    return F.softmax(x,dim=0).tolist()
+    return F.softmax(x).tolist()
   
